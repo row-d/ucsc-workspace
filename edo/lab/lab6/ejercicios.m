@@ -3,13 +3,13 @@ syms y(x)
 EDO1 = diff(y,x,1) + y/2 == cos(x);
 sol = dsolve(EDO1, y(pi) == 0);
 display('ejercicio 1');
-pretty(sol1);   
+pretty(sol);   
 ezplot(sol);
 clear all;
 
 %% ejercicio 2
 syms x(t)
-Dx = diff(x,t)
+Dx = diff(x,t);
 EDO2 = Dx + x/(t+40) == 1;
 sol = dsolve(EDO2,x(0) == 40);
 display('ejercicio 2');
